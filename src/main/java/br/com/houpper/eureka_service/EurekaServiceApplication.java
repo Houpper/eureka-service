@@ -17,7 +17,7 @@ public class EurekaServiceApplication {
 	 *
 	 * @param args Os argumentos da linha de comando.
 	 */
-	public static void main(String[] args) {
+	static void main(String[] args) {
 		SpringApplication.run(EurekaServiceApplication.class, args);
 	}
 }

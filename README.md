@@ -200,7 +200,7 @@ Após isso, a pipeline pode:
 ## 🔄 Executar no docker como Dev
 
 ``` bash
-docker run -d --name eureka --restart always -p 8761:8761 -e EUREKA_URL=http://eureka:8761/eureka/ -e HOSTNAME=eureka --network houpper-network eureka:dev
+docker run -d --name eureka-service --restart always -p 8761:8761 -e EUREKA_URL=http://eureka:8761/eureka/ -e HOSTNAME=eureka --network houpper-network eureka-service:dev
 ```
 > Para a execução ocorrer corretamente a rede docker 'houpper-network' deve existir.
 
