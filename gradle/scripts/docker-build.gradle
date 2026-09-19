@@ -17,7 +17,7 @@ tasks.register("docker-build", Exec) {
 				${allowedEnvs.join(', ')}
 
 				Exemplo:
-				  ./gradlew dockerBuild -Penv=dev
+				  ./gradlew docker-build -Penv=dev
 			""")
         }
 

@@ -1,6 +1,7 @@
 server:
   # Porta do Eureka Server
   port: 8761
+  shutdown: graceful
 
   compression:
     # Habilita compressão HTTP
@@ -10,6 +11,8 @@ spring:
   application:
     # Nome da aplicação
     name: eureka-service
+  lifecycle:
+    timeout-per-shutdown-phase: 20s
 
 eureka:
   instance:
@@ -40,8 +43,10 @@ management:
 
   endpoint:
     health:
-      # Em produção, prefira "when-authorized"
-      show-details: ${HEALTH_SHOW_DETAILS:always}
+      probes:
+        enabled: true
+      # Em produção, prefira "when-authorized", valor para dev "always"
+      show-details: ${HEALTH_SHOW_DETAILS:never}
 
 logging:
   level:
