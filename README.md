@@ -54,7 +54,7 @@ ${NOME_VARIAVEL:valor_padrao}
 |-----------------------|---------------------------------------------------|---------------------------------|
 | `EUREKA_HOSTNAME`     | Hostname da instância do serviço Eureka           | `localhost`                     |
 | `EUREKA_URL`          | URL do servidor Eureka para registro e descoberta | `http://localhost:8761/eureka/` |
-| `HEALTH_SHOW_DETAILS` | Controla a exibição de detalhes do health check   | `always`                        |
+| `HEALTH_SHOW_DETAILS` | Controla a exibição de detalhes do health check   | `never`                         |
 
 > Caso a variável não seja definida, o valor padrão especificado será utilizado automaticamente pela aplicação.
 
